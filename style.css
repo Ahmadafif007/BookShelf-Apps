@@ -1,14 +1,23 @@
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body, input, button {
-    font-family: 'Open Sans', sans-serif;
+body {
+    background-image: url('img/4.jpg');
 }
 
-input, button {
+body,
+input,
+button {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+input,
+button {
     font-size: 16px;
 }
 
@@ -17,7 +26,7 @@ input, button {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: cornflowerblue;
+    background-color: maroon;
     color: white;
 }
 
@@ -27,27 +36,28 @@ main {
     margin: 0 auto;
     padding: 16px;
 
+
 }
 
 .input_section {
     display: flex;
     flex-direction: column;
     padding: 16px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 10px;
 }
 
-.input_section > h2 {
+.input_section>h2 {
     text-align: center;
-    color: cornflowerblue;
+    color: maroon;
 }
 
-.input_section > form > .input {
+.input_section>form>.input {
     margin: 8px 0;
 }
 
-.input_section > form > button {
-    background-color: cornflowerblue;
+.input_section>form>button {
+    background-color: maroon;
     color: white;
     border: 0;
     border-radius: 5px;
@@ -57,11 +67,11 @@ main {
     cursor: pointer;
 }
 
-.input_section > form > button > span {
+.input_section>form>button>span {
     font-weight: bold;
 }
 
-.input_section > form > .input > input {
+.input_section>form>.input>input {
     display: block;
     width: 100%;
     padding: 8px;
@@ -69,63 +79,22 @@ main {
 }
 
 
-.input_section > form > .input > label {
-    color: cornflowerblue;
+.input_section>form>.input>label {
+    color: maroon;
     font-weight: bold;
 }
 
-.input_section > form > .input_inline {
+.input_section>form>.input_inline {
     margin: 12px 0;
     display: flex;
     align-items: center;
 }
 
-.input_section > form > .input_inline > label {
-    color: cornflowerblue;
+.input_section>form>.input_inline>label {
+    color: maroon;
     font-weight: bold;
     margin-right: 10px;
 }
-
-.search_section {
-    margin: 16px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
-.search_section > h2 {
-    color: cornflowerblue;
-}
-
-.search_section > form {
-    padding: 16px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto 1fr 0.5fr;
-    grid-gap: 10px;
-}
-
-.search_section > form > label {
-    display: flex;
-    align-items: center;
-}
-
-.search_section > form > input {
-    padding: 5px;
-    border-radius: 5px;
-}
-
-.search_section > form > button {
-    background-color: cornflowerblue;
-    color: white;
-    border: 0;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .book_shelf {
     margin: 16px 0 0 0;
     border: 1px solid black;
@@ -133,26 +102,27 @@ main {
     border-radius: 10px;
 }
 
-.book_shelf > h2 {
-    color: cornflowerblue;
+.book_shelf>h2 {
+    color: maroon;
 }
 
-.book_shelf > .book_list {
+.book_shelf>.book_list {
     padding: 16px;
 }
 
-.book_shelf > .book_list > .book_item {
+.book_shelf>.book_list>.book_item {
     padding: 8px 16px 16px 16px;
     border: 1px solid black;
     border-radius: 5px;
     margin: 10px 0;
 }
 
-.book_shelf > .book_list > .book_item > h3, p {
+.book_shelf>.book_list>.book_item>h3,
+p {
     margin: 8px 0;
 }
 
-.book_shelf > .book_list > .book_item > .action > button {
+.book_shelf>.book_list>.book_item>.action>button {
     border: 0;
     padding: 5px;
     margin: 0 5px 0 0;
@@ -160,12 +130,60 @@ main {
     cursor: pointer;
 }
 
-.book_shelf > .book_list > .book_item > .action > .green {
+.book_shelf>.book_list>.book_item>.action>.green {
     background-color: darkgreen;
     color: white;
 }
 
-.book_shelf > .book_list > .book_item > .action > .red {
+.book_shelf>.book_list>.book_item>.action>.red {
     background-color: darkred;
     color: white;
 }
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.footer-choose .bottom {
+    display: inline-block;
+}
+
+.footer-choose .bottom .kotak ul {
+    text-align: left;
+}
+
+.footer-choose .bottom .kotak ul li {
+    display: block;
+    margin-bottom: 10px;
+    margin-right: 100px;
+}
+
+.footer-choose .bottom .kotak a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-choose .bottom .kotak a::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0px;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.footer-choose .bottom .kotak a:hover::after {
+    width: 100%;
+    background: black;
+}
+
+.footer-choose {
+    background-color: maroon;
+    color: white;
+    text-align: center;
+}
+
+.copyright {
+    color: black;
+    text-align: center;
+    font-weight: 200;
+}
+
+
